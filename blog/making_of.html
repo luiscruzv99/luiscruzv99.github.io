@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-7b860d10.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/blog-657e27b9.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-dff28770.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-6ff21e63.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-b8bfbb7c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-aa6bc0ce.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-11a80d6c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-18be6efa.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-1daba58d.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-4d57299c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/TagContainer-79122980.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.js-38d3e819.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-32089796.js"><title>How I built and deployed my static site on a non-existent budget</title><!-- HEAD_svelte-uf0eqr --><html lang="en"></html><!-- HEAD_svelte-uf0eqr -->
+	</head>
+	<body>
+		<div>
+
+
+<header><div class="flex"><img src="/_app/immutable/assets/logo-6eccb70c.png" class="h-16 p-2" alt="">
+        <h2>LuisC.dev</h2></div>
+    <div class="xl-nav"><a href="/"><h3 class="px-4 hover:scale-150 hover:font-bold transition ease-in-out duration-200">Home</h3>
+            </a><a href="/blog"><h3 class="px-4 hover:scale-150 hover:font-bold transition ease-in-out duration-200">Blog</h3>
+            </a><a href="/projects"><h3 class="px-4 hover:scale-150 hover:font-bold transition ease-in-out duration-200">Projects</h3>
+            </a></div>
+    <div class="mobile-nav z-20"><img src="/_app/immutable/assets/ham-e84fedcf.svg" alt="">
+        </div></header>
+<main class="flex-grow"><div class="flex justify-around p-4 md:p-8 lg:p-16"><aside class="hidden lg:block w-1/5 text-center my-auto p-8"><div class="bg-cpink rounded-lg hover:scale-105 hover:transition-all sticky top-32"><a href="/blog/tags"><div class="bg-coral rounded-t-lg"><h4 class="tag-title">Tags</h4></div>
+
+		<div class="py-4 flex flex-wrap justify-center"><div class="py-2"><a href="/blog/tags/coding" class="tag_link no-underline">#coding</a></div><div class="py-2"><a href="/blog/tags/webdev" class="tag_link no-underline">#webdev</a></div></div></a></div></aside>
+	<article class="md:3/4 lg:w-3/5 m-2 xs:pb-20">
+
+<article><h1>How I built and deployed my static site on a non-existent budget</h1>
+	<p class="text-sm text-center">Written: 1/30/2023</p>
+	<hr>
+	<h2>1. The idea</h2>
+<p>Even though the first post in this blog is from Jan this year, and the website itself has just been up for a couple of months, the idea for this personal project has been in the works for far longer. It’s not the first time I’ve tried to create my personal webpage, although most of my tries involved vanilla html and css, which I always ended up abandoning. However, this last time was different. </p>
+<p>Back during June of this year, I had to do an assignment for a subject of my masters degree, which involved using AngularJS. Although not my favourite js framework, I got really easily into the flow and, when I finished with the subject, it left me wanting more. So after doing a little bit of research on other frameworks I chose Svelte and SvelteKit for my next experiment, which at the time I had not yet planned.</p>
+<p>About a month later, during summer, I started to read the posts on <a href="https://randy.gg" class="page_link">Randy</a>’s website, specifically his changelog series, in which he gave a snippet of his daily life, mixed with some reflections, on a weekly basis. Seeing how he had his web setup, with the blog and the changelog, I got <del>kinda jealous</del> inspired, and decided that I “would like to have some of that as well, please”.</p>
+<p>However, there were a few things that held me back from realising the idea of having my own little personal trash fire of a website. The first being: I’m a student (at the time I was looking for an internship, but had no luck), I have <strong>no extra money</strong>, I haven’t hosted a web, and <em>shit(the internet)‘s scary, man</em>. On top of that, I had never used Svelte before, so I was basically a noob. I decided to give it a rest for the time being, while I did some research and learned about svelte, static sites and free hosting during the rest of the summer.</p>
+<p>Then in September, things kicked off. I was still on “holidays” from my masters, and I was looking for interships in organisations (it seemed like nobody was in need of a graduate with no experience). So, I decided to use some of my free time to build off a personal portfolio website, to serve as a little addendum to my CV. After revamping a little bit my <a href="https://github.com/luiscruzv99" class="page_link">github profile</a>, I came up with a plan on how to create the website, make it static yet somewhat interactive and appealing, and deploy it, all for <strong>free</strong>.</p>
+<h2>2. But, how tho?</h2>
+<p>In order to have my page hosted for free I considered a few options, like Firebase (since I had some experience using it for web projects). However, this platform in particular has quotas for traffic in its free tier, and its terms of service state that you can’t use it for personal reasons, like hosting a personal webpage (and I’m a good boi). In the end, i chose the easiest alternative, taking advantage of github pages to host the web, not at all a revolutionary idea, a lot of people (like my buddy <a href="https://sergioquijanorey.github.io/" class="page_link">Sergio</a>) have their own blog on gh-pages.</p>
+<p>Since I’m <em>not like the other programmers</em>, I didn’t want to go the Hugo or Jekyll route and just have a collection of markdown files rendered into html with a plain theme, I wanted something with ✨<em><strong>pizzazz</strong></em>✨. Therefore, I chose to develop my page using Svelte and Tailwindcss (because I suck at vanilla css). This was because Svelte (via SvelteKit) allowed me to render everything into static pages, allowing me to deploy them to gh-pages without a hassle. Also, components are good and plain html is pain.</p>
+<p>However, this does not really work for the blog, because it would mean that I would have to write blog posts in html files (or rather <code>.svelte</code> files inside their corresponding routes), which would be slow and cumbersome. Enter <a href="https://mdsvex.com/" class="page_link">mdsvex</a>, a plugin for svelte that renders markdown files into html (I followed some tutorials in order to set this up, but the main one I used was <a href="https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog" class="page_link">this one</a>, by Josh Collinsworth). </p>
+<p>…But, wait a minute, didn’t you just said that you didn’t want a page that was just rendered md files?? </p>
+<p>Yes, but mdsvex is not like Hugo or tools like it, since it integrates into svelte, and allows for a really fine control of style and layout via custom components and by leveraging svelte features, like inline scripting (check the console of the page).</p>
+<p>To make deploying the static pages to my gh-pages, I decided to use <a href="https://buddy.works" class="page_link">Buddy</a> as a way to automatize the building process. I chose it because it is <em>mostly</em> free (it has monthly quotas for utilization, so you can’t do as many executions as you want, but meh) and setting up the actions (or pipelines) is very easy and intuitive. I’m sure it has a lot of limitations, but for a light project like this, it’s more than enough.</p>
+<h2>3. Duct-taping it all together</h2>
+<p>I’m not gonna lie, making it all work was kind of a pain in the ass, but that’s more on me being a sloppy programmer, rather than anything else. However, once that everything was set up, it was actually nice being able to write plain markdown and instantly see your changes on the web preview. It’s also nice to be able to push my work to my repo and have it up and running in my gh-pages in a matter of minutes without having to worry (<em>too much</em>) about anything.</p>
+<p>Down below is a diagram on how the process works.</p>
+<p><img src="/_app/immutable/assets/making_of.drawio-ca81f169.png"></p>
+<h2>4. Shortcomings</h2>
+<p>As you may have deduced from my explanations, my approach is not free of downsides; in fact, it has quite a few, the first of them being the lack of interactivity. Since I have no real server behind my web (just github’s CDN), I have no way to make it as interactive as other web or blog sites (I can’t add a comment section, for example). Nevertheless, I still can do some <strong>dank</strong> shit with the little client-side javascript I can add to my svelte pages (or I could if I really knew my way around js).</p>
+<p>The other downside, and this could be more serious, is the dependence on “free” platforms, like Buddy. It’s cool that I can forget about publishing the web and have it automagically done by some server gremlins somewhere in the world when I’m not looking. But that relies on those gremlins working for free forever, and I don’t think that is a guarantee. So, until I come up with a better (and still free) idea, I will have to be prepared to shift back to doing the publishing manually at any time.</p>
+<h2>5. Future plans</h2>
+<p>Honestly, I’d like this to be a kind of a back-burner project that I tinker with and improve over the time slowly. There are already plenty of things that I want to improve, but at the same time there are other project ideas bouncing around in my empty skull that I’d like to start (or resume as well). This means that the content here will be slowly drip fed.</p>
+<p>Nevertheless, I am keeping a TODO list of all the things I want to have done before the <em>start of the summer</em>, like:</p>
+<ul><li><p>Fixing bugs: specially the wonky nav menu in mobile view</p></li>
+<li><p>Gradually drift away from TailwindCSS: it’s not that I don’t like it, I just want to get better at vanilla CSS</p></li>
+<li><p>Accesibility update (alt descriptions, etc): I want the site to be a little more friendly to navigate for everybody</p></li>
+<li><p>Dark theme: so that my eyes don’t melt away when I work on the page at night with my lights off</p></li>
+<li><p>Projects page: I haven’t even started it, but it is kind of the point of having a <em><strong>portfolio</strong></em> website</p></li>
+<li><p>Improve the image carrousel: right now it’s in an <em>okay</em> state, but I’d like it to be more refined and for it to work correctly on chrome</p></li></ul>
+<p>Anyways, I’ll try to post content regularly on the blog so that I don’t forget that this project exists, let’s aim for … A publication a month, sound good? I don’t care if it doesn’t, this is more for me than for anyone who might be remotely interested in what I have to say.</p>
+<p>Enjoy the rest of the day, week, month or whatever time scale you wanna use.</p>
+<p>See ya!</p>
+<ul><li></li></ul></article></article>
+	<aside class="hidden lg:block w-1/5 text-center"></aside></div></main>
+<footer><h3 class="text-white">Made with ❤ by me</h3>
+    <h4 class="text-white">Built using Svelte</h4></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="oy7bj3">
+			import { start } from "../_app/immutable/start-dff28770.js";
+
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 5],
+					params: {slug:"making_of"},
+					routeId: "blog/[slug]",
+					data: (function(a){return [a,a]}(null)),
+					form: null
+				},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="oy7bj3"]').parentNode,
+				trailing_slash: "never"
+			});
+		</script>
+	</div>
+	</body>
+</html>
