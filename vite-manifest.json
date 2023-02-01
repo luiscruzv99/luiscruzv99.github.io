@@ -1,23 +1,23 @@
 {
-  "src/lib/assets/IdxCarr/dotfiles.png": {
-    "file": "_app/immutable/assets/dotfiles-2983d81c.png",
-    "src": "src/lib/assets/IdxCarr/dotfiles.png"
+  "src/lib/assets/profile.jpg": {
+    "file": "_app/immutable/assets/profile-edfbac92.jpg",
+    "src": "src/lib/assets/profile.jpg"
   },
   "src/lib/assets/IdxCarr/svsChat.png": {
     "file": "_app/immutable/assets/svsChat-5a5dcf64.png",
     "src": "src/lib/assets/IdxCarr/svsChat.png"
   },
-  "src/lib/assets/profile.jpg": {
-    "file": "_app/immutable/assets/profile-edfbac92.jpg",
-    "src": "src/lib/assets/profile.jpg"
-  },
-  "src/lib/assets/IdxCarr/cells.gif": {
-    "file": "_app/immutable/assets/cells-71bc9f60.gif",
-    "src": "src/lib/assets/IdxCarr/cells.gif"
+  "src/lib/assets/IdxCarr/dotfiles.png": {
+    "file": "_app/immutable/assets/dotfiles-2983d81c.png",
+    "src": "src/lib/assets/IdxCarr/dotfiles.png"
   },
   "src/lib/assets/IdxCarr/pathfinder.png": {
     "file": "_app/immutable/assets/pathfinder-eccf7650.png",
     "src": "src/lib/assets/IdxCarr/pathfinder.png"
+  },
+  "src/lib/assets/IdxCarr/cells.gif": {
+    "file": "_app/immutable/assets/cells-71bc9f60.gif",
+    "src": "src/lib/assets/IdxCarr/cells.gif"
   },
   "src/lib/assets/ham.svg": {
     "file": "_app/immutable/assets/ham-e84fedcf.svg",
@@ -48,12 +48,12 @@
     "src": "src/lib/assets/funkeToun.mp3"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-6ce8ce74.js",
+    "file": "_app/immutable/start-7d58e9c8.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-5963a7a1.js",
-      "_singletons-39535e3a.js",
+      "_singletons-36d8f7f3.js",
       "_preload-helper-aa6bc0ce.js"
     ],
     "dynamicImports": [
@@ -78,7 +78,7 @@
       "_index-c0dc55d5.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-a66ee43f.css"
+      "_app/immutable/assets/_layout-b06cdf9d.css"
     ],
     "assets": [
       "_app/immutable/assets/ham-e84fedcf.svg",
@@ -86,12 +86,12 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-bf1dadd2.js",
+    "file": "_app/immutable/components/error.svelte-615cd93b.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-5963a7a1.js",
-      "_singletons-39535e3a.js"
+      "_singletons-36d8f7f3.js"
     ]
   },
   "src/routes/+page.svelte": {
@@ -111,7 +111,7 @@
     ]
   },
   "src/routes/bdays/natalia/+page.svelte": {
-    "file": "_app/immutable/components/pages/bdays/natalia/_page.svelte-91eaa6ca.js",
+    "file": "_app/immutable/components/pages/bdays/natalia/_page.svelte-98a7df79.js",
     "src": "src/routes/bdays/natalia/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -236,8 +236,8 @@
       "__page-d3323467.js"
     ]
   },
-  "_singletons-39535e3a.js": {
-    "file": "_app/immutable/chunks/singletons-39535e3a.js",
+  "_singletons-36d8f7f3.js": {
+    "file": "_app/immutable/chunks/singletons-36d8f7f3.js",
     "imports": [
       "_index-5963a7a1.js"
     ]
@@ -323,7 +323,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-caad7342.js",
+    "file": "_app/immutable/chunks/1-7e96a592.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -339,7 +339,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-23d33863.js",
+    "file": "_app/immutable/chunks/3-b35f122d.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
@@ -429,10 +429,6 @@
       "_app/immutable/assets/making_of.drawio-ca81f169.png"
     ]
   },
-  "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-a66ee43f.css",
-    "src": "src/routes/+layout.css"
-  },
   "src/routes/bdays/natalia/+page.css": {
     "file": "_app/immutable/assets/_page-841d462c.css",
     "src": "src/routes/bdays/natalia/+page.css"
@@ -440,5 +436,9 @@
   "blog.css": {
     "file": "_app/immutable/assets/blog-657e27b9.css",
     "src": "blog.css"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-b06cdf9d.css",
+    "src": "src/routes/+layout.css"
   }
 }
