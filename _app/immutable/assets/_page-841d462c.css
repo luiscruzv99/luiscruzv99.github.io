@@ -1,0 +1,1 @@
+#container.svelte-1ju5egl{height:100%;overflow:hidden}.movimiento.svelte-1ju5egl{white-space:nowrap;-moz-transform:translateX(100%);-webkit-transform:translateX(100%);animation:svelte-1ju5egl-moverse 10s linear infinite}@keyframes svelte-1ju5egl-moverse{0%{transform:translate(100%)}to{-moz-transform:translateX(-100%);webkit-transform:translateX(-100%);transform:translate(-100%)}}
